@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center; font-family: system-ui; color: #252525;">All Articles</h1>
+    <hr>
+    <% for (let articles of articlesAll) { %>    
+        
+        <div class="articl-1 " style="background-color: orange; color: #fff; padding: 20px; margin: 10px 0;">
+            <h3>Title:  <%= articles.title %></h3>
+            <h3>Description: <%= articles.discription %> </h3>
+            <h3>Likes: <%= articles.likes %> </h3>
+        </div>
+        
+    <% } %>
+</body>
+</html>
